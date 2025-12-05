@@ -1,18 +1,15 @@
-import Button from "@/components/UI/Button";
 import Link from "next/link";
 import React from "react";
+import LoginForm from "./LoginForm";
 
 function LoginPage() {
   return (
     <section>
       <h1 className="font-bold text-lg">LogIn:</h1>
-      <form>
-        <div>form</div>
-        <Button>Submit</Button>
-      </form>
+      <LoginForm />
       <div className="text-gray-500 text-center">
         <div>
-          Do not have an account?{" "}
+          Do not have an account?
           <Link href="/register" className="font-bold">
             Register
           </Link>
