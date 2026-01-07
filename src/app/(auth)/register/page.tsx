@@ -1,18 +1,14 @@
-import Button from "@/components/UI/Button";
 import Link from "next/link";
-import React from "react";
+import RegisterForm from "./RegisterForm";
 
 function RegisterPage() {
   return (
     <section>
-      <h1 className="font-bold text-lg">Register:</h1>
-      <form>
-        <div>form</div>
-        <Button>Submit</Button>
-      </form>
+      <h1 className="font-bold text-lg mb-8">Register:</h1>
+      <RegisterForm />
       <div className="text-gray-500 text-center">
         <div>
-          Already have an account?{" "}
+          Already have an account?
           <Link href="/login" className="font-bold">
             LogIn
           </Link>
