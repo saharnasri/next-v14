@@ -18,7 +18,8 @@ function LoginForm() {
   };
   const passwordValidation = {
     value: /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/,
-    message: "Enter a valid password",
+    message:
+      "Enter a valid password ( combination of alphabet, numeric, and special characters)",
   };
   const onSubmit: SubmitHandler<IAuthForm> = (loginData) => {
     console.log(loginData);
