@@ -7,9 +7,9 @@ function LoginPage() {
     <section>
       <h1 className="font-bold text-lg mb-8">LogIn:</h1>
       <LoginForm />
-      <div className="text-gray-500 text-center">
+      <div className="text-gray-800 text-center">
         <div>
-          Do not have an account?
+          <span className="me-1"> Do not have an account?</span>
           <Link href="/register" className="font-bold">
             Register
           </Link>
