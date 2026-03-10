@@ -1,7 +1,9 @@
 "use client";
 import Button from "@/components/UI/Button";
 import TextField from "@/components/UI/TextField";
+import { login } from "@/services/authService";
 import { IAuthForm } from "@/types/models";
+import { log } from "console";
 import React from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 
@@ -21,8 +23,10 @@ function RegisterForm() {
     message:
       "Enter a valid password ( combination of alphabet, numeric, and special characters)",
   };
-  const onSubmit: SubmitHandler<IAuthForm> = (loginData) => {
+  const onSubmit: SubmitHandler<IAuthForm> = async (loginData) => {
     console.log(loginData);
+    const res = await login(loginData);
+    console.log("resss", res);
   };
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
